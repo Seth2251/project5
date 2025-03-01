@@ -25,6 +25,6 @@ onMounted(() => {
   genre.value = faker.music.genre(); // Random genre
   director.value = faker.person.fullName(); // Random director name
   rating.value = (Math.random() * 5).toFixed(1); // Random rating 0-5
-  image.value = faker.image.urlLoremFlickr({ category: "movie" }); // Random movie image
+  image.value = faker.image.url({ width: 300, height: 400, category: "movie" });// Random movie image
 });
 </script>

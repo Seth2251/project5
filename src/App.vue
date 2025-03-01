@@ -8,5 +8,5 @@ import NavMenu from '@/components/NavMenu.vue';
 </script>
 
 <style scoped>
-/* Global styles */
+
 </style>

@@ -1,15 +1,15 @@
-import { createRouter, createWebHistory } from 'vue-router'
-
-import HomePage from '@/views/HomePage.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import HomePage from '@/views/HomePage.vue';  // Home page route
+import MainView from '@/views/MainView.vue';  // Movies page route
 
 const routes = [
-  { path: '/', name: 'Home', component: HomePage },
-  { path: '/other', name: 'Other', component: () => import('@/views/OtherPage.vue') },
-]
+  { path: '/', component: HomePage }, // Home page route
+  { path: '/movies', component: MainView }, // Movies page route
+];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
-})
+});
 
-export default router
+export default router;
