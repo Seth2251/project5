@@ -1,9 +1,12 @@
 <template>
   <NavMenu />
-  <MainView />
+  <router-view /> 
 </template>
 
 <script setup>
-import NavMenu from "@/components/NavMenu.vue";
-import MainView from "@/views/MainView.vue";
+import NavMenu from '@/components/NavMenu.vue';
 </script>
+
+<style scoped>
+/* Global styles */
+</style>
