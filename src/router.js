@@ -1,14 +1,14 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import HomePage from '@/views/HomePage.vue';  // Home page route
-import MainView from '@/views/MainView.vue';  // Movies page route
+import { createRouter, createWebHashHistory } from 'vue-router';
+import HomePage from '@/views/HomePage.vue';
+import MainView from '@/views/MainView.vue';
 
 const routes = [
-  { path: '/project5/', component: HomePage }, // Home page route
-  { path: '/project5/movies', component: MainView }, // Movies page route
+  { path: '/', component: HomePage }, // Home Page (No /project5)
+  { path: '/movies', component: MainView }, // Movies Page (No /project5)
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(), // 🔹 Use hash-based history for GitHub Pages
   routes,
 });
 
