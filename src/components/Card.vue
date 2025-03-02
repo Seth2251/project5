@@ -22,7 +22,11 @@ const image = ref("");
 
 onMounted(() => {
   title.value = faker.word.words(3); // Random movie title
-  genre.value = faker.music.genre(); // Random genre
+  genre.value = faker.helpers.arrayElement([
+  "Action", "Comedy", "Drama", "Horror", "Sci-Fi", "Romance", 
+  "Thriller", "Fantasy", "Mystery", "Documentary", "Adventure", "Animation"
+]);
+
   director.value = faker.person.fullName(); // Random director name
   rating.value = (Math.random() * 5).toFixed(1); // Random rating 0-5
   image.value = faker.image.url({ width: 300, height: 400, category: "movie" });// Random movie image
