@@ -3,8 +3,8 @@ import HomePage from '@/views/HomePage.vue';  // Home page route
 import MainView from '@/views/MainView.vue';  // Movies page route
 
 const routes = [
-  { path: '/', component: HomePage }, // Home page route
-  { path: '/movies', component: MainView }, // Movies page route
+  { path: '/project5/', component: HomePage }, // Home page route
+  { path: '/project5/movies', component: MainView }, // Movies page route
 ];
 
 const router = createRouter({
